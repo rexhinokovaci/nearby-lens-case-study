@@ -24,6 +24,10 @@ Smart glasses with cameras, such as Ray-Ban Meta, Oakley Meta and Snap Spectacle
 - Shipped natively on four platforms from one detection model.
 - Rule updates go live in minutes instead of waiting for store review.
 
+## Read more
+
+- [Architecture and key decisions](docs/architecture.md)
+
 ---
 
 **Want something like this built for your business?** I build mobile apps, web apps and AI products end to end. [Email me about your project](mailto:kovacirexhino@gmail.com?subject=Project%20inquiry) · [Full profile](https://github.com/rexhinokovaci)
