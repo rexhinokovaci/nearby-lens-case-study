@@ -27,6 +27,7 @@ Smart glasses with cameras, such as Ray-Ban Meta, Oakley Meta and Snap Spectacle
 ## Read more
 
 - [Architecture and key decisions](docs/architecture.md)
+- [Delivery pipeline and stack](docs/engineering.md)
 
 ---
 
