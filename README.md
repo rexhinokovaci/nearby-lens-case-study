@@ -58,6 +58,18 @@ Yes. I'm a mobile app developer and DevOps engineer based in Tirana, Albania, bu
 - [Architecture and key decisions](docs/architecture.md)
 - [Delivery pipeline and stack](docs/engineering.md)
 
+## Related case studies
+
+- [Word game engine](https://github.com/rexhinokovaci/word-game-engine-case-study): one real-time multiplayer engine shipped as 7 localized games
+- [Kush Jam Unë?](https://github.com/rexhinokovaci/kush-jam-une-case-study): Albanian party game with live content, subscriptions and ads
+- [Balkans Quiz](https://github.com/rexhinokovaci/balkans-quiz-case-study): per-country trivia apps with Apple Watch, widgets and an automated question pipeline
+
+## About the author
+
+**Rexhino Kovaci** is a DevOps engineer, mobile app developer and AI engineer based in Tirana, Albania, and the founder of [Modex Apps](https://modex.al). He has 5+ years in DevOps, including work as a DevOps Engineer at Lufthansa Industry Solutions on Volkswagen AG projects, and holds Microsoft DevOps Engineer Expert, Azure Administrator Associate, Azure Developer Associate, HashiCorp Terraform Associate and New Relic Full-Stack Observability certifications. He builds for clients across the Balkans and Europe.
+
 ---
 
 **Want something like this built for your business?** I build mobile apps, web apps and AI products end to end. [Email me about your project](mailto:kovacirexhino@gmail.com?subject=Project%20inquiry) · [Full profile](https://github.com/rexhinokovaci)
+
+<sub>This case study is licensed under [CC BY 4.0](LICENSE). Product names and trademarks belong to their owners.</sub>
