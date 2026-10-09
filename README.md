@@ -24,6 +24,35 @@ Smart glasses with cameras, such as Ray-Ban Meta, Oakley Meta and Snap Spectacle
 - Shipped natively on four platforms from one detection model.
 - Rule updates go live in minutes instead of waiting for store review.
 
+## Lessons learned
+
+- **Score, don't match.** BLE signals are noisy, so a weighted confidence score with user-selectable sensitivity works better than a yes/no device match.
+- **Ship detection rules as data.** Moving rules out of the app binary turned a store-review cycle into a deploy that takes minutes. Validating that file before it's published matters as much as testing code.
+- **Background behavior is platform-specific.** Reliable background scanning needed native code on each platform, plus explicit handling of reboots, scan stalls and OS battery optimization.
+- **Be honest about limits.** Passive BLE can't prove a camera is recording, so the app presents likelihood, not proof.
+
+## FAQ
+
+### Can Nearby Lens prove that someone is recording me?
+
+No. It detects nearby devices that advertise like camera-equipped smart glasses and reports how likely a match is. Devices that don't advertise, or that randomize their identifiers, may be missed. See [known limits](docs/architecture.md#known-limits-stated-honestly).
+
+### Does the app send my data to a server?
+
+No. There is no tracking backend: detection runs on the device, identifiers are hashed, and detection history stays on the phone. The app fetches the versioned detection rules from the edge and caches them.
+
+### How are new smart glasses models added?
+
+By publishing a new version of the rules file to Cloudflare. Apps pick it up over the air and cache it for offline use, with no App Store or Google Play release needed.
+
+### Why native apps instead of a cross-platform framework?
+
+Background Bluetooth LE behaves differently on iOS, watchOS, Android and Wear OS, and needs native control to stay reliable without draining the battery.
+
+### Can you build a Bluetooth, wearable or privacy-first app for my business?
+
+Yes. I'm a mobile app developer and DevOps engineer based in Tirana, Albania, building native iOS, Android, watchOS and Wear OS apps for clients across the Balkans and Europe. [Email me about your project](mailto:kovacirexhino@gmail.com?subject=Project%20inquiry).
+
 ## Read more
 
 - [Architecture and key decisions](docs/architecture.md)
